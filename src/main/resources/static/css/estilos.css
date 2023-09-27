@@ -1,0 +1,39 @@
+header {
+  position: fixed;
+  background-color: blue;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  margin-top: 80px;
+  height: 100%;
+}
+
+aside {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  width: 30%;
+  height: 100%;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  width: 65%;
+  height: 100%;
+}
+
+button{
+    background-color: green;
+    color: white;
+}
