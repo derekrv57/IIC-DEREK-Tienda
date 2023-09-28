@@ -8,14 +8,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>TechShop</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/estilos.css">
     </head>
     <body>
         <header>
             <nav>
-                <a href="index.html"><h1>TechShop</h1></a>
-                <a href="ejemplo8.html">&triangleleft;</a>
-                <a href="ejemplo2.html">&triangleright;</a>
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">TechShop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="form.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="carrito.html">Carrito</a>
+                  </li>
+                </ul>
             </nav>
         </header>
         <div class="container">
@@ -28,13 +37,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <h1>Nuestros Productos</h1>
                 <hr>
                 <div>
-                    <h1>Aero 20 <button>Comprar</button></h1> 
+                    <h1>Aero 20 <a href="carrito.html?id=aero20"><button type="button" class="btn btn-success">Comprar</button></a> </h1> 
                     <img src="img/20.png">
                     <p>The AERO-20A is a compact line array system which incorporates the ALAS™ philosophy and draws from the astounding success of the “all purpose” capabilities of the AERO-12A, launched in 2009. The powered AERO-20A incorporates DAS´s latest technical achievements in transducer design, power electronics and system management.</p>
                 </div>
                 <hr>
                 <div>
-                    <h1>Aero 40 <button>Comprar</button></h1>
+                    <h1>Aero 40 <a href="carrito.html?id=aero40"><button type="button" class="btn btn-success">Comprar</button></a> </h1> 
                     <img src="img/40.png">
                     <p>The AERO-40A is a 3-way powered line array system which incorporates connectivity for remote monitoring and control. The unique configuration of the AERO-40A Advanced Line Array System (ALAS™) incorporates a rear-loaded 12” transducer in a bass-horn configuration for low-end reproduction. The mid-range is handled by an new 8” transducer developed specifically for the AERO-40A. High frequency reproduction relies on two DAS M-75N compression drivers attached to a new BPS-2912 waveguide.</p>
 
@@ -51,3 +60,5 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <p style="text-align: center;">Sagittis nibh netus aliquet pulvinar tellus nisl malesuada eu erat, at arcu lacinia molestie dapibus aenean mauris curae mus sapien, bibendum sociosqu blandit nec rutrum consequat praesent augue. Aliquam nibh malesuada vulputate tristique pulvinar fermentum nulla hac, tempor non penatibus turpis purus imperdiet habitasse ultricies suspendisse, curae ornare fames scelerisque enim ridiculus arcu. Bibendum luctus quam ullamcorper aenean congue non taciti maecenas, sapien consequat per leo curae orci class nunc natoque, mi est imperdiet lacus sociis faucibus suscipit.</p> -->
     </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
