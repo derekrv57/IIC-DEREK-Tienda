@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns="http://www.w3.org/1999/xhtml">
+<head th:replace="~{layout/plantilla :: head}">
+	<title>TechShop</title>
+</head>
+<body>
+	<header th:replace="~{layout/plantilla :: header}"/>
+		<div class="container">
+            <aside>
+                <div id="home"><h1>HOME</h1></div>
+                <h1>El producto mas vendido</h1>
+                <p>Segun los datos del mes pasado el producto Aero 20 fue el que registré6 mas ventas el mes anterior</p>
+            </aside>
+            <section>
+                <h1>Nuestros Productos</h1>
+                <hr>
+                <div>
+                    <h1>Aero 20 <a href="carrito.html?id=aero20"><button type="button" class="btn btn-success">Comprar</button></a> </h1>
+                    <img src="img/20.png">
+                    <p>The AERO-20A is a compact line array system which incorporates the ALAS™ philosophy and draws from the astounding success of the “all purpose” capabilities of the AERO-12A, launched in 2009. The powered AERO-20A incorporates DAS´s latest technical achievements in transducer design, power electronics and system management.</p>
+                </div>
+                <hr>
+                <div>
+                    <h1>Aero 40 <a href="carrito.html?id=aero40"><button type="button" class="btn btn-success">Comprar</button></a> </h1>
+                    <img src="img/40.png">
+                    <p>The AERO-40A is a 3-way powered line array system which incorporates connectivity for remote monitoring and control. The unique configuration of the AERO-40A Advanced Line Array System (ALAS™) incorporates a rear-loaded 12” transducer in a bass-horn configuration for low-end reproduction. The mid-range is handled by an new 8” transducer developed specifically for the AERO-40A. High frequency reproduction relies on two DAS M-75N compression drivers attached to a new BPS-2912 waveguide.</p>
+
+                </div>
+            </section>
+        </div>
+	<footer th:replace="~{layout/plantilla :: footer}"/>
+</body>
+</html>

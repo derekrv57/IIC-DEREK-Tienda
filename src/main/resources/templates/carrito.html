@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head th:replace="~{layout/plantilla :: head}">
+    <title>TechShop</title>
+</head>
+    <body>
+        <header th:replace="~{layout/plantilla :: header}"/>
+        <div class="container">
+            <aside>
+                <div id="home"><h1>HOME</h1></div>
+                <h1>El producto mas vendido</h1>
+                <p>Segun los datos del mes pasado el producto Aero 20 fue el que registré6 mas ventas el mes anterior</p>
+            </aside>
+            <section>
+                <h1>Carrito</h1>
+                    <center>
+                        <hr>
+                    	<h1> No hay productos en el carrito</h1>
+                    </center>
+            </section>
+        </div>
+        <footer th:replace="~{layout/plantilla :: footer}"/>
+    </body>
+</html>
