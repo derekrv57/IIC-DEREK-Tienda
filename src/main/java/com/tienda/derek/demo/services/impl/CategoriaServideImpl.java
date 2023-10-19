@@ -22,4 +22,22 @@ public class CategoriaServideImpl implements CategoriaService {
         }
         return lista;
     }
+
+    @Override
+    @Transactional
+    public Categoria getCategoria(Categoria categoria) {
+        return categoriaDao.findById(categoria.getIdCategoria()).orElse(null);
+    }
+
+    @Override
+    @Transactional
+    public void save(Categoria categoria) {
+        categoriaDao.save(categoria);
+    }
+
+    @Override
+    @Transactional
+    public void delete(Categoria categoria) {
+        categoriaDao.delete(categoria);
+    }
 }
