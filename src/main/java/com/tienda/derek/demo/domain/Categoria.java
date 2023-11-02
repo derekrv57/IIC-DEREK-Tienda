@@ -6,6 +6,7 @@ package com.tienda.derek.demo.domain;
 
 import jakarta.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 import lombok.Data;
 
 /**
@@ -34,4 +35,8 @@ public class Categoria implements Serializable {
         this.descripcion = categoria;
         this.activo = activo;
     }
+    
+    @OneToMany
+    @JoinColumn(name = "id_categoria", updatable = false)
+    List<Producto> productos;
 }
